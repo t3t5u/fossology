@@ -10,9 +10,9 @@ sudo make install
 cd ..
 rm -rf IO-CaptureOutput
 
-git clone https://github.com/dmgerman/ninka.git
+git clone https://github.com/t3t5u/ninka.git
 cd ninka
-git reset --hard 81f185261c8863c5b84344ee31192870be939faf
+#it reset --hard 81f185261c8863c5b84344ee31192870be939faf
 perl Makefile.PL
 make
 sudo make install
