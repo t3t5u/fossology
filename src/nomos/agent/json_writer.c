@@ -84,6 +84,10 @@ char *unescapePathSeparator(const char* json)
     return NULL;
   }
   tempjson = strdup(json);
+  if (!optionIsSet(OPTS_LONG_CMD_OUTPUT))
+  {
+    return tempjson;
+  }
 
   tmp = tempjson;
   for (count = 0; (tmp = strstr(tmp, escapedSeparator)); count++)
